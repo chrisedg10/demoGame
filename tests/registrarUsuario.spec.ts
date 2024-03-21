@@ -14,11 +14,11 @@ test('Cargando pagina principal', async ({ page }) => {
   await base.moveToSignUpScreen();
   
   await signUp.loadSignUpPage();
-  await signUp.enterNewUserData();
+  await signUp.enterNewUserData("testCH220@test.com", "Prueba1234");
   await signUp.confirmUserCreation();
 
   await userProfile.loadProfilePage();
 
   await base.returnToHomePage();
-  await base.loadMainPage();
+  await base.loadMainPageSigned();
 });

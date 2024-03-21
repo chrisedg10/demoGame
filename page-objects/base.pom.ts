@@ -39,6 +39,10 @@ export class Base {
     await expect(this.mainSlider).toBeVisible({timeout: 60000});
   }
 
+  async loadMainPageSigned() {
+    await expect(this.mainSlider).toBeVisible({timeout: 60000});
+  }
+
   /* Close modal function */
   async closeModal() {
     await expect(this.welcomeModal).toBeVisible({timeout: 60000});

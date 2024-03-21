@@ -50,8 +50,8 @@ export class SignUp {
     }
 
     /* Enter new user data */
-    async enterNewUserData() {
-      await this.emailInput.fill("testCH117@test.com");
+    async enterNewUserData(email: string, password: string) {
+      await this.emailInput.fill(email);
       await this.termsAndConditions.click();
         
       await expect(this.promoCodeRdbtn).toBeVisible({timeout: 60000});
@@ -61,8 +61,8 @@ export class SignUp {
       await this.noBonusRdbtn.click();
 
       await this.passwordInput.scrollIntoViewIfNeeded();
-      await this.passwordInput.fill("Prueba1234");
-      await this.reEnterPasswdInput.fill("Prueba1234");
+      await this.passwordInput.fill(password);
+      await this.reEnterPasswdInput.fill(password);
 
       await this.createAcctBtn.click();
     }
