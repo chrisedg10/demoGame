@@ -17,6 +17,7 @@ test('Registrar nuevo usuario', async ({ page }) => {
   await base.moveToSignUpScreen();
   
   await signUp.loadSignUpPage();
+  /* Cambiar debidamente el correo del NUEVO USUARIO, caso contrario el caso de prueba sera fallido */
   await signUp.enterNewUserData("testCH226@test.com", "Prueba1234");
   await signUp.confirmUserCreation();
 
