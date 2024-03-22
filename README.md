@@ -36,6 +36,8 @@ npx playwright test
 Por defecto Playwright tiene configurado que todos los casos de prueba se ejecutaran en la capeta "tests" pero esto se puede cambiar si se desea ejecutar algun archivo en especifico modificando la linea que se muestra en la siguiente imagen: 
 ![image](https://github.com/chrisedg10/demoGame/assets/76143358/69af991f-c463-4cab-8bc9-7e649a90a41d)
 
+Tomar en cuenta que los casos de prueba requieren parametros, asi que es necesario cambiarlos recurrentemente entre ejecuciones <br>
+![image](https://github.com/chrisedg10/demoGame/assets/76143358/66df3068-5f99-476b-9f39-bd37d4f2060e)
 
 
 ## Reporte de pruebas
