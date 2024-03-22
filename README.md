@@ -27,3 +27,19 @@ Se puede realizar de las siguientes formas <br>
 
 
 2. Consola <br>
+Ejecutamos el siguiente comando en nuestra terminal
+``` bash
+npx playwright test
+```
+<br> Hay que tomar en cuenta que este comando ejecuta todos los tests que detecte dentro de la carperta "tests" <br>
+![image](https://github.com/chrisedg10/demoGame/assets/76143358/c7d0c868-1d5c-44a6-8894-4188736d7690) <br>
+Por defecto Playwright tiene configurado que todos los casos de prueba se ejecutaran en la capeta "tests" pero esto se puede cambiar si se desea ejecutar algun archivo en especifico modificando la linea que se muestra en la siguiente imagen: 
+![image](https://github.com/chrisedg10/demoGame/assets/76143358/69af991f-c463-4cab-8bc9-7e649a90a41d)
+
+
+
+## Reporte de pruebas
+Ejecutamos el siguiente comando en nuestra terminal
+``` bash
+npx playwright show-report
+```
